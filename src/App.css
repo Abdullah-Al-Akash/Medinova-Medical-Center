@@ -1,0 +1,11 @@
+.brand-color {
+        color: rgb(51, 240, 79);
+}
+
+.brand-btn {
+        background: rgb(51, 240, 79);
+}
+
+.brand-btn:hover {
+        background: rgb(14, 214, 44);
+}
