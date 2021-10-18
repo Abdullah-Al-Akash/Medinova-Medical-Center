@@ -1,8 +1,14 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import './Service.css'
 
 const Service = (props) => {
-        const { name, img, description, available_time } = props.service;
+        const { id, name, img, description, available_time } = props.service;
+        // Use History:
+        const history = useHistory();
+        const appointment = () => {
+                history.push(`/appointment/${id}`)
+        }
         return (
                 <div>
                         <div class="col p-3">
@@ -16,7 +22,7 @@ const Service = (props) => {
                                         </div>
                                         <div className="d-flex h-100 justify-content-between align-items-center p-3 pt-0">
                                                 <small>{available_time}</small>
-                                                <button className="btn fw-bold brand-btn align-items-center">Appointment Now</button>
+                                                <button onClick={appointment} className="btn fw-bold brand-btn align-items-center">Appointment Now</button>
                                         </div>
                                 </div>
                         </div>

@@ -3,7 +3,7 @@ import './Navbar.css';
 
 const Navbar = () => {
         return (
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-bg fixed-top">
                         <div class="container">
                                 <a class="navbar-brand" href="#">Medinova Medical Center</a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
