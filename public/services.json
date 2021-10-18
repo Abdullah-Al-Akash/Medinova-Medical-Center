@@ -1,0 +1,50 @@
+[
+        {
+                "id": 1,
+                "name": "Cardiology",
+                "img": "https://www.medicarespots.com/wp-content/uploads/2020/12/Best-Cardiac-Surgeons-in-India.jpg",
+                "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.",
+                "fee": "25",
+                "available_time": "10AM-2PM || 5PM-8PM"
+        },
+        {
+                "id": 2,
+                "name": "Dental",
+                "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/2291/production/_110894880_gettyimages-1055182908.jpg",
+                "description": "Dentists' areas of care include not only their patients' teeth and gums but also the muscles of the head, neck and jaw, the tongue, salivary glands, the nervous system of the head and neck and other areas. During a comprehensive exam, dentists examine the teeth and gums, but they also look for lumps, swellings, discolorations, ulcerations — any abnormality. When appropriate, they perform procedures such as biopsies, diagnostic tests for chronic or infectious diseases, salivary gland function, and screening tests for oral cancer. In addition, dentists can spot early warning signs in the mouth that may indicate disease elsewhere in the body. Dentists' training also enables them to recognize situations that warrant referring patients for care by dental specialists or physicians.",
+                "fee": "20",
+                "available_time": "10AM-2PM || 5PM-8PM"
+        },
+        {
+                "id": 3,
+                "name": "Neurology",
+                "img": "https://www.bannerhealth.com/-/media/images/project/bh/services/imaging/banner_mi-main_4x3_800x600.ashx?h=600&w=800&hash=B18841F6A55ADD313CD76C393E5D7189",
+                "description": "Neurology and Neurosurgery Care. Put your mind at ease. If you’re ever in need of neurological care, you can trust that you’re in good hands at Banner Health. Our team of neurologists and neurosurgeons are experts in neurological health and use only the latest technologies and neurology treatment methods to take care of you to get you back to the life you love.",
+                "fee": "27",
+                "available_time": "10AM-2PM || 5PM-8PM"
+        },
+        {
+                "id": 4,
+                "name": "Ophthalmologist",
+                "img": "https://assets.dmagstatic.com/wp-content/uploads/2021/03/iStock-495624858.jpg",
+                "description": "In other parts of the world, this is not an issue because licensing is different and qualifications are taken more seriously,” says Dr. Robert Gross, a pediatric ophthalmologist and Clinical Professor of Ophthalmology at UT Southwestern and past chair of the Section on Ophthalmology of the American Academy of Pediatrics. “Folks have realized that there are different ways to get what they want. In a way, it’s a little bit disappointing because the emphasis should be on education and training rather than what can we do to change the law.",
+                "fee": "15",
+                "available_time": "10AM-2PM || 5PM-8PM"
+        },
+        {
+                "id": 5,
+                "name": "Obstetrician",
+                "img": "https://7dmc.ae/wp-content/uploads/2020/08/banner-Gynecology-Clinic2.jpg",
+                "description": "Gynecologists are doctors who specialize in the medical care of women, especially concerning female reproductive organs. They deal with issues such as pregnancy, menstruation, childbirth, hormone disorders, fertility disorders, etc. Mostly, gynecologists perform a pap smear test, using an instrument called a speculum, to detect any abnormalities in the reproductive system.",
+                "fee": "35",
+                "available_time": "10AM-2PM || 5PM-8PM"
+        },
+        {
+                "id": 6,
+                "name": "Pediatrician",
+                "img": "https://weatherbyhealthcare.com/blog/wp-content/uploads/2019/02/locum-tenens-pediatricians-950x556.jpg",
+                "description": "Pediatricians who are looking for positive change — both professionally and personally — would be wise to consider locum tenens. Locum tenens jobs for pediatricians are available nationwide, and this practice alternative lends itself perfectly to pediatrics. The advantages are significant and wide reaching. We list just a few below, and also hear from a pediatrician who began taking locum tenens jobs seven years ago, right out of residency.",
+                "fee": "21",
+                "available_time": "10AM-2PM || 5PM-8PM"
+        }
+]
