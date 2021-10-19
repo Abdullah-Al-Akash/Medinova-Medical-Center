@@ -55,9 +55,9 @@ const Navbar = () => {
                                                 <li className="nav-item">
                                                         {
                                                                 user?.email ?
-                                                                        <button onClick={logOut} className="btn btn-danger fw-bolder">Log Out</button>
+                                                                        <button onClick={logOut} className="btn btn-danger fw-bolder"><i class="fas fa-sign-out-alt"></i> Log Out</button>
                                                                         :
-                                                                        <button onClick={handleLogin} className="btn brand-btn fw-bold">Login</button>
+                                                                        <button onClick={handleLogin} className="btn brand-btn fw-bold">Login <i className="fas fa-sign-in-alt"></i></button>
                                                         }
                                                 </li>
                                         </ul>
