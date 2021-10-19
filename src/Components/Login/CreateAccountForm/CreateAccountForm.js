@@ -4,7 +4,7 @@ import useAuth from '../../../hooks/useAuth';
 import img from '../../../images/login-img.png'
 
 const CreateAccountForm = () => {
-        const { handleGoogleLogin, handleName, handleEmail, handlePassword, error, handleRegistration, } = useAuth();
+        const { handleName, handleEmail, handlePassword, error, handleRegistration, signInWithGoogle } = useAuth();
 
         const location = useLocation();
         const history = useHistory();
@@ -14,6 +14,14 @@ const CreateAccountForm = () => {
                 e.preventDefault();
                 handleRegistration()
                 history.push('/login');
+        }
+
+        // Google Login:
+        const handleGoogleLogin = () => {
+                signInWithGoogle()
+                        .then(() => {
+                                history.push(redirect_URI);
+                        })
         }
         return (
                 <div className="container mt-5 pt-5">
@@ -31,7 +39,7 @@ const CreateAccountForm = () => {
                                                 </div>
                                                 <div className="mb-3">
                                                         <label htmlFor="exampleInputPassword1" className="form-label fw-bold">Password</label>
-                                                        <input onBlur={handlePassword} type="password" className="form-control" required placeholder="Your Password" />
+                                                        <input onBlur={handlePassword} type="password" className="form-control" required placeholder="Your Password (at least 6digit)" />
                                                         {
                                                                 error ?
                                                                         <p className="text-danger">{error}</p>

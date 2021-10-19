@@ -44,6 +44,9 @@
         <li>
                 FontAwesome Icon
         </li>
+        <li>
+                Firebase Hosting
+        </li>
 </ul>
 <br>
 <h5>I have shared the Home page UI in below-</h5>

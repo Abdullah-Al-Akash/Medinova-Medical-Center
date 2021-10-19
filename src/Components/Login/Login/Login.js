@@ -6,7 +6,7 @@ import './Login.css';
 import img from '../../../images/login-img.png';
 
 const Login = () => {
-        const { handleName, handleEmail, handlePassword, signInWithGoogle, error, isLogin, toggleLogin, signUpEmail, signInEmail, loginWithEmailPassword, email, password, handleUserLogin } = useAuth();
+        const { handleEmail, handlePassword, signInWithGoogle, error, handleUserLogin } = useAuth();
 
         const location = useLocation();
         const history = useHistory();
@@ -40,7 +40,7 @@ const Login = () => {
                                                 </div>
                                                 <div className="mb-3">
                                                         <label htmlFor="exampleInputPassword1" className="form-label fw-bold">Password</label>
-                                                        <input onBlur={handlePassword} type="password" className="form-control" required placeholder="Your Password" />
+                                                        <input onBlur={handlePassword} type="password" className="form-control" required placeholder="Your Password (at least 6digit)" />
                                                         {
                                                                 error ?
                                                                         <p className="text-danger">{error}</p>
