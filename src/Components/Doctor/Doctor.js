@@ -5,7 +5,7 @@ const Doctor = (props) => {
         const { name, img } = props.doctor;
         return (
                 <div>
-                        <div className="col p-3">
+                        <div className="col">
                                 <div className="h-100 service-card doctor-card">
                                         <div className="doctor d-flex justify-content-center pt-3">
                                                 <img src={img} className="img-fluid rounded-circle border border-dark border-3" alt="..." />

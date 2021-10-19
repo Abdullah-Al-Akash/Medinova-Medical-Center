@@ -54,6 +54,10 @@ const Footer = () => {
                                                 </div>
                                         </div>
                                 </div>
+                                <div className="text-center pb-5">
+                                        <p className="p-0 m-0">Copyright © 2021 ||Medinova-medical-center.web.app</p>
+                                        <small>made by <span className="fw-bold text-success">Abdullah Al Akash</span></small>
+                                </div>
                         </div>
                 </div>
         );

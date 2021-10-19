@@ -40,7 +40,7 @@ const CreateAccountForm = () => {
                                                         }
                                                 </div>
                                                 <div className="d-grid gap-2">
-                                                        <button type="submit" className="btn brand-btn fw-bold">
+                                                        <button type="submit" className="btn brand-btn fw-bold btn-lg login-btn">
                                                                 Create New Account
                                                         </button>
                                                 </div>

@@ -50,8 +50,8 @@ const Login = () => {
                                                 </div>
 
                                                 <div className="d-grid gap-2">
-                                                        <button type="submit" className="btn brand-btn fw-bold">
-                                                                Login
+                                                        <button type="submit" className="btn brand-btn fw-bold btn-lg login-btn">
+                                                                Login <i className="fas fa-sign-in-alt"></i>
                                                         </button>
                                                 </div>
                                                 <div className="mb-3 pt-2 ps-2">
