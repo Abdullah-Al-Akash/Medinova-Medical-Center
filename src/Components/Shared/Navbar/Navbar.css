@@ -1,3 +1,7 @@
 .navbar-bg {
         background-color: rgb(190, 253, 195);
 }
+
+.nav-link {
+        text-decoration: none;
+}

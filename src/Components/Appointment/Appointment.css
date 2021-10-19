@@ -1,9 +1,6 @@
-.login-btn {
-        border-radius: 25px;
-}
-
-.signInForm {
+.appointmentForm {
         box-shadow: 20px 20px 40px lightgray;
         padding-bottom: 5%;
         border-radius: 15px;
+        background-color: rgb(207, 245, 210)
 }

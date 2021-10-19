@@ -1,0 +1,42 @@
+[
+        {
+                "id": 1,
+                "name": "Dr Mohamed Sheikh, GP",
+                "img": "https://cli.21lab.co/wp-content/uploads/2021/08/Artboard-11.png"
+        },
+        {
+                "id": 2,
+                "name": "Dr Ilona Mercieca, GP",
+                "img": "https://cli.21lab.co/wp-content/uploads/2021/08/Artboard-Copy-12-11.png"
+        },
+        {
+                "id": 3,
+                "name": "Mrs. Anna, Dental Nurse",
+                "img": "https://cli.21lab.co/wp-content/uploads/2021/08/Artboard-Copy-14-12.png"
+        },
+        {
+                "id": 4,
+                "name": "Dr Hiren Patel, GP",
+                "img": "https://cli.21lab.co/wp-content/uploads/2021/08/Artboard-Copy-13-11.png"
+        },
+        {
+                "id": 5,
+                "name": "Dr Frypen Mohamed",
+                "img": "https://image.freepik.com/free-photo/portrait-hansome-young-male-doctor-man_171337-5068.jpg"
+        },
+        {
+                "id": 6,
+                "name": "Dr Ceka Homio",
+                "img": "https://image.freepik.com/free-photo/portrait-doctor_144627-39381.jpg"
+        },
+        {
+                "id": 7,
+                "name": "DR Rubnan Sheikh",
+                "img": "https://img.freepik.com/free-photo/medium-shot-doctor-with-crossed-arms_23-2148868176.jpg?size=338&ext=jpg"
+        },
+        {
+                "id": 8,
+                "name": "Dr Odile de Mesmay, GP",
+                "img": "https://cli.21lab.co/wp-content/uploads/2021/08/Artboard-Copy-11-11.png"
+        }
+]

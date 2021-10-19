@@ -17,14 +17,10 @@ const useFirebase = () => {
         const googleProvider = new GoogleAuthProvider();
         const auth = getAuth();
 
+        // Sign In With Google:
         const signInWithGoogle = () => {
                 setIsLoading(true);
-                signInWithPopup(auth, googleProvider)
-                        .then(result => {
-                                setUser(result.user);
-                                console.log(result.user)
-                        })
-                        .finally(() => { setIsLoading(false) })
+                return signInWithPopup(auth, googleProvider)
         };
 
         // Observe User State Change:
@@ -42,75 +38,6 @@ const useFirebase = () => {
         }, [])
 
 
-        // Handle Registration Name:
-        const handleName = e => {
-                setName(e.target.value);
-        }
-
-        // Handle Registration Email:
-        const handleEmail = e => {
-                setEmail(e.target.value);
-        }
-
-        // Handle Registration Password:
-        const handlePassword = e => {
-                setPassword(e.target.value);
-        }
-        // Handle Registration:
-        const toggleLogin = e => {
-                setIsLogin(e.target.checked);
-        }
-        const signUp = e => {
-                e.preventDefault();
-                if (password.length < 6) {
-                        setError("Password Must be atleast 6 character");
-                        return;
-                }
-                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                        setError("Please Type Valid Email");
-                        return;
-                }
-                isLogin ? login(email, password) : createUser(email, password);
-        }
-
-        // Set User Name:
-        const setUserName = () => {
-                updateProfile(auth.currentUser, {
-                        displayName: name
-                })
-                        .then(result => { })
-        }
-
-        // Login:
-        const login = (email, password) => {
-                signInWithEmailAndPassword(auth, email, password)
-                        .then((result) => {
-                                // Signed in 
-                                setUser(result.user);
-                                console.log(result.user);
-                                // ...
-                        })
-                        .catch((error) => {
-                                setError(error.message);
-                        });
-        }
-
-        // Create New User:
-        const createUser = (email, password) => {
-                createUserWithEmailAndPassword(auth, email, password)
-                        .then(result => {
-                                setUser(result.user);
-                                console.log(result.user);
-                                setError()
-                                setUserName();
-                                alert("Successfully Create Account");
-                        })
-                        .catch((error) => {
-                                setError(error.message);
-                                return;
-                        });
-        }
-
         // Log Out:
         const logOut = () => {
                 setIsLoading(true);
@@ -121,15 +48,83 @@ const useFirebase = () => {
                         .finally(() => setIsLoading(false));
         }
 
+        // Sign Up and Sign In Using Email Password:
+        const handleEmail = e => {
+                setEmail(e.target.value)
+        }
+        const handlePassword = e => {
+                setPassword(e.target.value);
+        }
+        const handleName = e => {
+                setName(e.target.value);
+        }
+
+        // Create New User:
+        const handleRegistration = () => {
+                setIsLoading(true)
+                // e.preventDefault();
+                if (password?.length < 6) {
+                        setError('Password Must be at least 6 digit');
+                        alert('Password Must be at least 6 digit');
+                        window.location.reload();
+                        return;
+                }
+                console.log(email, password, name)
+                createUserWithEmailAndPassword(auth, email, password)
+                        .then(result => {
+                                console.log(result.user)
+                                setError('')
+                                setUserName()
+                                alert('Successfully Create Account! Please Login Now!');
+                                logOut()
+                        })
+                        .catch(error => {
+                                setError(error.message);
+                        })
+                        .finally(() => setIsLoading(false));
+        }
+
+        // Login User:
+        const handleUserLogin = () => {
+                setIsLoading(true)
+                // e.preventDefault();
+                if (password?.length < 6) {
+                        setError('Password Must be at least 6 digit');
+                        alert('Password Must be at least 6 digit');
+                        window.location.reload();
+                        return;
+                }
+                console.log(email, password)
+                signInWithEmailAndPassword(auth, email, password)
+                        .then(result => {
+                                console.log(result.user)
+                                setError()
+                        })
+                        .catch(error => {
+                                setError(error.message);
+                        })
+                        .finally(() => setIsLoading(false))
+        }
+
+        const setUserName = () => {
+                setIsLoading(true)
+                updateProfile(auth.currentUser, { displayName: name })
+                        .then(result => {
+
+                        })
+                        .finally(() => { setIsLoading(false) })
+        }
         return {
                 user,
                 isLoading,
                 signInWithGoogle,
+                logOut,
                 handleName,
                 handleEmail,
                 handlePassword,
-                signUp,
-                logOut, error, isLogin, toggleLogin, isLoading
+                handleRegistration,
+                handleUserLogin,
+                error
         }
 }
 

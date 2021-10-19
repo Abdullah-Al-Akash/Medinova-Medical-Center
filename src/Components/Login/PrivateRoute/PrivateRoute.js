@@ -7,8 +7,8 @@ const PrivateRoute = ({ children, ...rest }) => {
         const { user, isLoading } = useAuth();
 
         if (isLoading) {
-                return <div className="text-center">
-                        <img src="https://miro.medium.com/max/1400/1*CsJ05WEGfunYMLGfsT2sXA.gif" className="img-fluid" alt="" />
+                return <div style={{ height: '80vh' }} className="d-flex justify-content-center align-items-center">
+                        <img src="https://trails.ca/wp-content/uploads/2020/10/loading-spinner.gif" className="img-fluid" alt="" />
                 </div>
         }
         return (

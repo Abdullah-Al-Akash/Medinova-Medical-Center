@@ -1,0 +1,12 @@
+.doctor img {
+        height: 200px;
+        width: 200px;
+}
+
+.doctor-card {
+        background-color: rgb(190, 253, 195);
+}
+
+.social-icon img:hover {
+        cursor: pointer;
+}
