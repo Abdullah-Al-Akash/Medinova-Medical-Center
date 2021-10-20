@@ -1,0 +1,6 @@
+.confirm-section {
+        background-color: rgb(190, 253, 195);
+        box-shadow: 20px 20px 40px lightgray;
+        border: 2px dotted black;
+        border-radius: 5px;
+}

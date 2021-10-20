@@ -46,7 +46,7 @@ const Navbar = () => {
                                                 <li className="nav-item">
                                                         {
                                                                 user?.email ?
-                                                                        <img src={user?.photoURL ? user?.photoURL : defaultUser} className="img-fluid rounded-circle me-3" width="45" alt="" />
+                                                                        <img src={user?.photoURL ? user?.photoURL : defaultUser} className="img-fluid rounded-circle me-3 border border-dark border-3" width="50" alt="" />
                                                                         :
                                                                         ''
 

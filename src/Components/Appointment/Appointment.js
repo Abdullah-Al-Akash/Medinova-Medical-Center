@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
-import useAppointment from '../../hooks/useAppointment';
 import './Appointment.css';
-
+// Patient ID:
+export const patientId = Math.round(Math.random() * 100);
 const Appointment = () => {
         const history = useHistory();
         const { serviceId } = useParams();
@@ -16,21 +16,17 @@ const Appointment = () => {
                         .then(data => setServices(data))
         }, [serviceId]);
 
-        // Patient ID:
-        const patientId = Math.round(Math.random() * 100);
+
         // Confirm Appointment:
-        const appointmentSubmit = () => {
-                alert('Thank You, Your Appointment has been received. Your Patient ID is ' + `${patientId}`);
-                history.push('/');
+        const appointmentSubmit = (e) => {
+                e.preventDefault();
+                history.push('/confirm-appointment');
         }
 
         // Filter Service From All Service:
         const appointmentService = services?.find(service => service.id === +serviceId);
 
         const { name, description, available_time, img, fee } = appointmentService ? appointmentService : '';
-
-        // Use Hook For Patient Information:
-        const { handlePatientId, handlePatientName, handlePatientPhone, handlePatientEmail } = useAppointment()
 
         return (
                 <div className="mt-5 pt-5 container">
@@ -64,8 +60,10 @@ const Appointment = () => {
                                                                 <h2 className="text-center p-5 text-success fw-bold">{name ? name : ''} Department</h2>
                                                                 <form onSubmit={appointmentSubmit} className="w-75 mx-auto">
                                                                         <div className="mb-3">
-                                                                                <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Patient ID</label>
-                                                                                <input onChange={handlePatientId} type="text" className="form-control" placeholder={patientId} disabled />
+                                                                                <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Patient ID
+                                                                                </label>
+                                                                                <input type="number" className="form-control" placeholder={patientId} disabled />
+
                                                                         </div>
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Appointment Fee</label>
@@ -73,15 +71,15 @@ const Appointment = () => {
                                                                         </div>
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Patient Name</label>
-                                                                                <input onBlur={handlePatientName} type="text" className="form-control" placeholder="Patient Name" required />
+                                                                                <input type="text" className="form-control" placeholder="Patient Name" required />
                                                                         </div>
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Phone Number</label>
-                                                                                <input onBlur={handlePatientPhone} type="number" className="form-control" placeholder="Phone Number" required />
+                                                                                <input type="number" className="form-control" placeholder="Phone Number" required />
                                                                         </div>
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Email address</label>
-                                                                                <input onBlur={handlePatientEmail} type="email" className="form-control" placeholder="Your Email" required />
+                                                                                <input type="email" className="form-control" placeholder="Your Email" required />
                                                                         </div>
                                                                         <div className="d-grid gap-2">
                                                                                 <button type="submit" className="btn brand-btn fw-bold btn-lg">

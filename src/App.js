@@ -15,6 +15,7 @@ import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
+import ConfirmAppointment from './Components/ConfirmAppointment/ConfirmAppointment';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <PrivateRoute path="/appointment/:serviceId">
               <Appointment />
+            </PrivateRoute>
+            <PrivateRoute path="/confirm-appointment">
+              <ConfirmAppointment />
             </PrivateRoute>
             <Route path="/about">
               <About />
