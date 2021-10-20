@@ -18,9 +18,9 @@ const Contact = () => {
                                         </div>
                                 </div>
                                 <div className="col-lg-6">
-                                        <div className="p-4 bg-danger text-light rounded-3">
-                                                <h1 className="fw-bold">Emergency Ambulance</h1>
-                                                <h2 className="fw-bold"> +1 212-226-3126</h2>
+                                        <div className="p-4 bg-danger text-light rounded-3 text-center">
+                                                <h1 className="fw-bold">We Are Always Sincere</h1>
+                                                <h2 className="fw-bold"> About Your Health</h2>
                                                 <br />
                                         </div>
                                         <div className="row p-4">

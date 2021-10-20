@@ -4,7 +4,7 @@
 <br>
 <h6>Hello!</h6>
 <p>Today I have created a website related Medical Center which name is Medinova Medical Center. For complete this
-        website I have used some technologies and I am going to say about the website and building technology.</p>
+        website I have used some technologies and I am going to say about the website and building technology for UI, Functionality. For Authentication setup I have used firebase system. As this is a health related website, so I try to handle cover healthcare related services.</p>
 <br>
 <h5>Actually This is a Medical Healthcare related website where someone can get--</h5>
 <ul>

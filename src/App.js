@@ -16,6 +16,8 @@ import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
 import ConfirmAppointment from './Components/ConfirmAppointment/ConfirmAppointment';
+import AllService from './AllService/AllService';
+import Emergency from './Components/Emergency/Emergency';
 
 function App() {
   return (
@@ -32,6 +34,12 @@ function App() {
             </Route>
             <PrivateRoute path="/appointment/:serviceId">
               <Appointment />
+            </PrivateRoute>
+            <PrivateRoute path="/all-service">
+              <AllService />
+            </PrivateRoute>
+            <PrivateRoute path="/emergency">
+              <Emergency />
             </PrivateRoute>
             <PrivateRoute path="/confirm-appointment">
               <ConfirmAppointment />

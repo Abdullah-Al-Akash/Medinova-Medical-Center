@@ -46,5 +46,29 @@
                 "description": "Pediatricians who are looking for positive change — both professionally and personally — would be wise to consider locum tenens. Locum tenens jobs for pediatricians are available nationwide, and this practice alternative lends itself perfectly to pediatrics. The advantages are significant and wide reaching. We list just a few below, and also hear from a pediatrician who began taking locum tenens jobs seven years ago, right out of residency.",
                 "fee": "21",
                 "available_time": "10AM-8PM"
+        },
+        {
+                "id": 7,
+                "name": "COVID-19",
+                "img": "https://i.ibb.co/zb2Gjb8/genetic-risk-factors-for-COVID-19.png",
+                "description": "Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2. An innovative one of a kind program, Covishaala deploys a ‘Train the Trainer’ model, empowering influential professionals from various fields including medicine, education and journalism with the tools and information they need to address the COVID-19 misinformation impacting their communities.",
+                "fee": "61",
+                "available_time": "24/7 Days"
+        },
+        {
+                "id": 8,
+                "name": "Liver Disease",
+                "img": "https://i.ibb.co/XxKbv8c/www-finddoctor24.png",
+                "description": "It helps your body digest food, store energy, and remove poisons. There are many kinds of liver diseases: Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C. Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis.",
+                "fee": "41",
+                "available_time": "24/7 Days"
+        },
+        {
+                "id": 9,
+                "name": "Brain Surgery",
+                "img": "https://i.ibb.co/qBWpkHm/126647643-image-of-a-doctor-in-a-white-coat-and-brain-above-his-hands-neurosurgery-treating-of-a-bra.png",
+                "description": "Brain surgery is a critical and complicated process. The type of brain surgery done depends highly on the condition being treated. For example, a brain aneurysm can be repaired using a catheter that's introduced into an artery in the groin. If the aneurysm has ruptured, an open surgery called craniotomy may be used.",
+                "fee": "51",
+                "available_time": "24/7 Days"
         }
 ]

@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../../images/question.png';
 
 const QuestionPart = () => {
         return (
@@ -30,9 +31,41 @@ const QuestionPart = () => {
                         </div>
                         <div className="mt-5">
                                 <div className="p-4 bg-danger text-light rounded-3 w-75 mx-auto">
-                                        <h1 className="fw-bold"> Emergency Ambulance</h1>
-                                        <h2 className="fw-bold"><i className="fas fa-phone-alt"></i> +1 212-226-3126</h2>
-                                        <br />
+                                        <h1 className="fw-bold">Have More Questions?</h1>
+                                </div>
+                        </div>
+                        <div className="row text-start">
+                                <div className="col-lg-6 pt-5 p-5">
+                                        <div className="appointmentForm">
+                                                <h2 className="text-center text-success fw-bold pt-5">Please Submit Your Question</h2>
+                                                <div className="w-75 mx-auto pt-3">
+                                                        <div className="mb-3">
+                                                                <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Name</label>
+                                                                <input type="email" className="form-control" placeholder="Your Name" required />
+                                                        </div>
+                                                        <div className="mb-3">
+                                                                <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Email Address</label>
+                                                                <input type="email" className="form-control" placeholder="Your Email" required />
+                                                        </div>
+                                                        <div class="mb-3">
+                                                                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Write Your Question</label>
+                                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        </div>
+                                                        <div className="d-grid gap-2">
+                                                                <button type="submit" className="btn brand-btn fw-bold btn-lg">
+                                                                        Submit Question
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div className="col-lg-6 text-center pt-5">
+                                        <img src={img} className="img-fluid w-75 pt-3" alt="" />
+                                </div>
+                        </div>
+                        <div className="pb-5 pt-3">
+                                <div style={{ background: 'rgb(190, 253, 195)' }} className="p-4 text-success rounded-3 w-75 mx-auto">
+                                        <h1 className="fw-bold">We will reply very soon</h1>
                                 </div>
                         </div>
                 </div>

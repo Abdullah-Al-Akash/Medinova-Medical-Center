@@ -29,10 +29,16 @@ const Navbar = () => {
                                                         <Link to="/home" className="nav-link active fw-bold" aria-current="page">Home</Link>
                                                 </li>
                                                 <li className="nav-item">
+                                                        <Link to="/all-service" className="nav-link active fw-bold" aria-current="page">All Services</Link>
+                                                </li>
+                                                <li className="nav-item">
                                                         <Link to="/about" className="nav-link active  fw-bold" aria-current="page">About</Link>
                                                 </li>
                                                 <li className="nav-item">
                                                         <Link to="/contact" className="nav-link active  fw-bold" aria-current="page">Contact</Link>
+                                                </li>
+                                                <li className="nav-item">
+                                                        <Link to="/emergency" className="nav-link active  fw-bold" aria-current="page">Emergency</Link>
                                                 </li>
                                                 <li className="nav-item">
                                                         <p className="nav-link active text-success fw-bold">
