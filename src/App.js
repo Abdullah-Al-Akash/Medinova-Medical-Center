@@ -15,7 +15,6 @@ import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
-import CreateAccountForm from './Components/Login/CreateAccountForm/CreateAccountForm';
 
 function App() {
   return (
@@ -41,9 +40,6 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
-            </Route>
-            <Route path="/registration">
-              <CreateAccountForm />
             </Route>
             <Route path="*">
               <NotFound />

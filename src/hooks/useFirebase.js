@@ -70,18 +70,18 @@ const useFirebase = () => {
                         return;
                 }
                 console.log(email, password, name)
-                createUserWithEmailAndPassword(auth, email, password)
-                        .then(result => {
-                                console.log(result.user)
-                                setError('')
-                                setUserName()
-                                alert('Successfully Create Account! Please Login Now!');
-                                logOut()
-                        })
-                        .catch(error => {
-                                setError(error.message);
-                        })
-                        .finally(() => setIsLoading(false));
+                return createUserWithEmailAndPassword(auth, email, password)
+                // .then(result => {
+                //         console.log(result.user)
+                //         setError('')
+                //         setUserName()
+                //         // alert('Successfully Create Account! Please Login Now!');
+                //         // logOut()
+                // })
+                // .catch(error => {
+                //         setError(error.message);
+                // })
+                // .finally(() => setIsLoading(false));
         }
 
         // Login User:
@@ -101,6 +101,7 @@ const useFirebase = () => {
                                 setError()
                         })
                         .catch(error => {
+                                alert('Invalid Password, Try Again');
                                 setError(error.message);
                         })
                         .finally(() => setIsLoading(false))
@@ -110,7 +111,7 @@ const useFirebase = () => {
                 setIsLoading(true)
                 updateProfile(auth.currentUser, { displayName: name })
                         .then(result => {
-
+                                window.location.reload()
                         })
                         .finally(() => { setIsLoading(false) })
         }
@@ -124,7 +125,8 @@ const useFirebase = () => {
                 handlePassword,
                 handleRegistration,
                 handleUserLogin,
-                error
+                error,
+                setError, setIsLoading, setUserName,
         }
 }
 

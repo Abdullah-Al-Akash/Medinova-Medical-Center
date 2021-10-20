@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
+import useAppointment from '../../hooks/useAppointment';
 import './Appointment.css';
 
 const Appointment = () => {
@@ -27,6 +28,9 @@ const Appointment = () => {
         const appointmentService = services?.find(service => service.id === +serviceId);
 
         const { name, description, available_time, img, fee } = appointmentService ? appointmentService : '';
+
+        // Use Hook For Patient Information:
+        const { handlePatientId, handlePatientName, handlePatientPhone, handlePatientEmail } = useAppointment()
 
         return (
                 <div className="mt-5 pt-5 container">
@@ -61,7 +65,7 @@ const Appointment = () => {
                                                                 <form onSubmit={appointmentSubmit} className="w-75 mx-auto">
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Patient ID</label>
-                                                                                <input type="text" className="form-control" placeholder={patientId} disabled />
+                                                                                <input onChange={handlePatientId} type="text" className="form-control" placeholder={patientId} disabled />
                                                                         </div>
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Appointment Fee</label>
@@ -69,15 +73,15 @@ const Appointment = () => {
                                                                         </div>
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Patient Name</label>
-                                                                                <input type="text" className="form-control" placeholder="Patient Name" required />
+                                                                                <input onBlur={handlePatientName} type="text" className="form-control" placeholder="Patient Name" required />
                                                                         </div>
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Phone Number</label>
-                                                                                <input type="number" className="form-control" placeholder="Phone Number" required />
+                                                                                <input onBlur={handlePatientPhone} type="number" className="form-control" placeholder="Phone Number" required />
                                                                         </div>
                                                                         <div className="mb-3">
                                                                                 <label htmlFor="exampleInputEmail1" className="form-label fw-bold">Email address</label>
-                                                                                <input type="email" className="form-control" placeholder="Your Email" required />
+                                                                                <input onBlur={handlePatientEmail} type="email" className="form-control" placeholder="Your Email" required />
                                                                         </div>
                                                                         <div className="d-grid gap-2">
                                                                                 <button type="submit" className="btn brand-btn fw-bold btn-lg">

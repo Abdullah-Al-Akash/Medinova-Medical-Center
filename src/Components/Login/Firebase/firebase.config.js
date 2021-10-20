@@ -1,11 +1,11 @@
 // My web app's Firebase configuration
 const firebaseConfig = {
-        apiKey: "AIzaSyC1pnkDVLjHrCvFtg35SGMFqZ6O3HpyKB4",
-        authDomain: "red-onion123.firebaseapp.com",
-        projectId: "red-onion123",
-        storageBucket: "red-onion123.appspot.com",
-        messagingSenderId: "1019655124074",
-        appId: "1:1019655124074:web:e8c72c42bd00cbb292c613"
+        apiKey: "AIzaSyAoeUM0Ze-McnETKHpDgiQO18kr3TdRqDE",
+        authDomain: "medinova-center.firebaseapp.com",
+        projectId: "medinova-center",
+        storageBucket: "medinova-center.appspot.com",
+        messagingSenderId: "989033582516",
+        appId: "1:989033582516:web:fb8021c698ca7dfa31ace1"
 };
 
 export default firebaseConfig;
