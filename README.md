@@ -1,7 +1,7 @@
 # Medinova Medical Center
 
 <h3>Live Site: <a href="https://medinova-medical-center.web.app/">Medinova Medical Center</a></h3>
-<h3>Code Link: <a href="https://github.com/Abdullah-Al-Akash/Medinova-Medical-Center">Medinova Medical Center</a></h3>
+<h3>Code Link: <a href="https://github.com/Abdullah-Al-Akash/Medinova-Medical-Center">Medinova Medical Center Code Link</a></h3>
 <br>
 <h6>Hello!</h6>
 <p>Today I have created a website related Medical Center which name is Medinova Medical Center. For complete this
